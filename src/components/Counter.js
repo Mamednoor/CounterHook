@@ -17,14 +17,11 @@ function Counter() {
           name="input"
           value={count}
           onChange={handleCount}
-      >
+      > Let See The input Change
       </input>
-      <button onClick={() => setCount(count + 1)}>
-        +1
-      </button>
-      <button onClick={() => setCount(count - 1)}>
-        -1
-      </button>
+      <input type="button" value="+1" onClick={() => setCount(count + 1)}/>
+      <input type="button" value="-1" onClick={() => setCount(count - 1)}/>
+
     </div>
   );
 }
