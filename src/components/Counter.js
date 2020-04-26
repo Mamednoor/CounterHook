@@ -13,15 +13,15 @@ function Counter() {
     <div>
       <p>Counter below</p>
       <input
-          type="number"
-          name="input"
+          htmlfor="number"
+          
           value={count}
           onChange={handleCount}
-      > Let See The input Change
-      </input>
-      <input type="button" value="+1" onClick={() => setCount(count + 1)}/>
-      <input type="button" value="-1" onClick={() => setCount(count - 1)}/>
-
+      />
+      <p>Let see the magic count</p>
+      <input type="button" value="+1" onClick={() => setCount(count + 1)} />
+      <input type="button" value="-1" onClick={() => setCount(count - 1)} />
+      <input type="button" value="reset" onClick={() => setCount(0)}/>
     </div>
   );
 }
