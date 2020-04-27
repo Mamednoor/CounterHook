@@ -18,7 +18,7 @@ function Counter() {
           value={count}
           onChange={handleCount}
       />
-      <p>Let see the magic count</p>
+      <p>Let see the magic {count}</p>
       <input type="button" value="+1" onClick={() => setCount(count + 1)} />
       <input type="button" value="-1" onClick={() => setCount(count - 1)} />
       <input type="button" value="reset" onClick={() => setCount(0)}/>
