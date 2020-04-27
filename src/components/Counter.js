@@ -14,7 +14,7 @@ function Counter() {
       <p>Counter below</p>
       <input
           htmlfor="number"
-          
+          id="number"
           value={count}
           onChange={handleCount}
       />
